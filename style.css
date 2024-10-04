@@ -1,0 +1,167 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* width: 100 */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+nav{
+    /* background-color: #ccc; */
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+    gap:10px;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content1 {
+    position: absolute;
+    top: 18%;
+}
+.content1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.content1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: grid;
+    place-content: center;
+}
+
+.btn button {
+    position: relative;
+    top: 40%;
+    height: 33px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgb(35, 35, 255);
+    width: 150px;
+}
+
+.btn:hover,button {
+    cursor: pointer;
+    transform: translateY(-10%);
+    transition: all 0.3s ease;
+}
+
+.card-container {
+    /* background-color: #ccc; */
+    text-align: center;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 69%;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 7px;
+    border: 1px solid #ccf;
+    text-align: center;
+    display: grid;
+    /* overflow: hidden; */
+    place-content: center;
+    width: 300px;
+    height: 120px;
+}
+
+.card h3{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.gallerydiv{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 80%;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.gallery1 img,.gallery3 img{
+    position: relative;
+    top: 75%;
+}
+
+.gallery2 img {
+    position: relative;
+    top: 59%;
+}
+
+.text,.features{
+    text-decoration: underline;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    position: relative;
+    left: 47%;
+}
+
+.text h3{
+    font-family: Arial, Helvetica, sans-serif;
+    top:10%;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    left: -0.2em;
+    font-size: 1.5em;
+}
+
+.features h3{
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 6em;
+    left: -0.2em;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+.testimonials {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    top:78em;
+    gap: 30px;
+    bottom: 30em;
+    justify-content: space-between;
+}
