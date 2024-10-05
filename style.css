@@ -28,12 +28,12 @@ nav a {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
-    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for hover */
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 nav a:hover {
-    color: rgb(35, 35, 255); /* Change color on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: rgb(35, 35, 255);
+    transform: scale(1.05);
 }
 
 .content1 {
@@ -62,13 +62,13 @@ nav a:hover {
     border: 1px solid #ccc;
     background-color: rgb(35, 35, 255);
     width: 150px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn button:hover {
     cursor: pointer;
-    background-color: rgb(20, 20, 200); /* Darker color on hover */
-    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: rgb(20, 20, 200);
+    transform: translateY(-5px);
 }
 
 .card-container {
@@ -89,12 +89,12 @@ nav a:hover {
     place-content: center;
     width: 300px;
     height: 120px;
-    transition: transform 0.3s ease; /* Added transition */
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
     cursor: pointer;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 .card h3, .card p {
@@ -173,7 +173,6 @@ nav a:hover {
 .contact {
     text-align: center;
     padding: 40px 20px;
-    /* background-color: #f0f0f0; */
     width: 100%;
 }
 
