@@ -2,166 +2,231 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
-    /* width: 100 */
+    margin: 0;
 }
 
 .main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 50px;
     width: 100%;
-    border: 1px solid #ccc;
 }
 
-nav{
-    /* background-color: #ccc; */
-    display: inline-flex;
+nav {
+    display: flex;
     height: 50px;
-    width: 100%;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for hover */
+}
+
+nav a:hover {
+    color: rgb(35, 35, 255); /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .content1 {
-    position: absolute;
-    top: 18%;
+    text-align: center;
+    padding: 20px;
 }
-.content1 h2{
+
+.content1 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
 
-.content1 p{
+.content1 p {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
 }
 
-.btn{
+.btn {
     display: grid;
     place-content: center;
 }
 
 .btn button {
-    position: relative;
-    top: 40%;
     height: 33px;
     color: #fff;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: rgb(35, 35, 255);
     width: 150px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
 }
 
-.btn:hover,button {
+.btn button:hover {
     cursor: pointer;
-    transform: translateY(-10%);
-    transition: all 0.3s ease;
+    background-color: rgb(20, 20, 200); /* Darker color on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .card-container {
-    /* background-color: #ccc; */
-    text-align: center;
     display: flex;
-    position: absolute;
     flex-wrap: wrap;
-    top: 69%;
+    justify-content: center;
     gap: 30px;
-    justify-content: space-between;
+    padding: 20px;
 }
 
-.card{
+.card {
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 7px;
     border: 1px solid #ccf;
     text-align: center;
     display: grid;
-    /* overflow: hidden; */
     place-content: center;
     width: 300px;
     height: 120px;
+    transition: transform 0.3s ease; /* Added transition */
 }
 
-.card h3{
-    margin-top: 20px;
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card h3, .card p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 25px;
-}
-
-.gallerydiv{
+.gallerydiv, .testimonials, .pricing, .contact {
     display: flex;
-    position: absolute;
     flex-wrap: wrap;
-    top: 80%;
+    justify-content: center;
     gap: 30px;
-    justify-content: space-between;
+    padding: 20px;
 }
 
-.gallery1 img,.gallery3 img{
-    position: relative;
-    top: 75%;
+.gallery1 img, .gallery3 img, .gallery2 img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
-.gallery2 img {
-    position: relative;
-    top: 59%;
-}
-
-.text,.features{
+.text, .features {
     text-decoration: underline;
     display: grid;
     place-content: center;
     justify-content: center;
-    position: relative;
-    left: 47%;
+    width: 100%;
 }
 
-.text h3{
+.text h3, .features h3 {
     font-family: Arial, Helvetica, sans-serif;
-    top:10%;
-    position: relative;
     text-align: center;
-    text-decoration: underline;
-    left: -0.2em;
     font-size: 1.5em;
 }
 
-.features h3{
-    font-size: 1.5em;
-    text-decoration: underline;
-    font-family: Arial, Helvetica, sans-serif;
-    bottom: 6em;
-    left: -0.2em;
-    position: relative;
-    justify-content: center;
+.pricing {
     text-align: center;
-    display: grid;
-    place-content: center;
+    position: relative;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    width: 100%;
 }
 
-.testimonials {
+.pricing h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border: 1px solid #ccf;
+    border-radius: 7px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 24px 0px;
+    transition: transform 0.3s ease; /* Added transition */
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px); 
+    cursor: pointer;
+}
+
+.pricing-card h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.pricing-card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.contact {
     text-align: center;
-    display: flex;
-    position: absolute;
-    flex-wrap: wrap;
-    top:78em;
-    gap: 30px;
-    bottom: 30em;
-    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.contact h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#last{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    .btn button {
+        width: 100%;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    
+    .content1 h2 {
+        font-size: 1.5em;
+    }
+    
+    .content1 p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content1 h2 {
+        font-size: 1.2em;
+    }
+    
+    .content1 p {
+        font-size: 0.9em;
+    }
 }
